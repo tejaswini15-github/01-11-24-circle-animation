@@ -1,0 +1,77 @@
+html ,
+body {
+    height: 100%;   
+} 
+body {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    margin: 0;
+}
+.one {
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: #4285F4;
+    animation: colorchanging;
+    animation-duration: 1.0s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.2s;
+}    
+.two {
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: #DB4437;
+    animation-name: colorchanging;
+    animation-duration: 1.0s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.4s;
+}    
+.three {
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: #F4B400;
+    animation-name: colorchanging;
+    animation-duration: 1.0s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.6s;
+}    
+.four {
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: #0F9D58;
+    animation-name: colorchanging;
+    animation-duration: 1.0s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.8s;
+}    
+@keyframes colorchanging {
+    0% {
+        transform: translateY(0px);
+        
+    }
+    25%  {
+    
+        transform: translateY(-10px);
+    }
+    50% {
+        
+        transform: translateY(0px);
+    }
+    75%  {
+        
+        transform: translateY(10px);
+    }
+    100%  {
+        
+        transform: translateY(0px);
+    }
+}
